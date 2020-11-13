@@ -7,7 +7,13 @@ public class Main {
 	static String nomeJogador;
 	static Scanner entrada = new Scanner(System.in);
 	
+	static String historia[] = new String [10];
+	static String enunciado[] = new String [10];
+	static String alternativas[] = new String [10];
+	
 	public static void main(String[] args) {
+		
+		alimentaVetores();
 
 		System.out.println("*Mensagem de Introdução*");
 
@@ -20,6 +26,22 @@ public class Main {
 
 	}
 
+	static void alimentaVetores() {
+		historia[0] = "";
+		historia[1] = "";
+		historia[2] = "";
+		historia[3] = "";
+		historia[4] = "";
+		historia[5] = "";
+		historia[6] = "";
+		historia[7] = "";
+		historia[8] = "";
+		historia[9] = "";
+		
+				
+	}
+	
+	
 	static void menu() {
 
 
@@ -54,6 +76,8 @@ public class Main {
 
 	static void opJogar() {
 		System.out.println("|---Opção Jogar---|");
+		
+		
 	}
 	
 	static void opIntrucoes() {
