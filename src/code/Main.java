@@ -8,11 +8,6 @@ public class Main {
 	static Scanner entrada = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		
-		
-		
-		Scanner entrada = new Scanner(System.in);
-		
 
 		System.out.println("*Mensagem de Introdução*");
 
@@ -27,12 +22,12 @@ public class Main {
 
 	static void menu() {
 
-		boolean tacerto = false;
 
 		do {
 			System.out.println("Bem-vindo ao Menu Principal! " + "\n 1 - Jogar" + "\n 2 - Instruções" + "\n 3 - Créditos"
 					+ "\n 4 - Sair" + "\nSelecione uma opção digitando por seu número equivalente:");
 
+			
 			switch (entrada.nextInt()) {
 			case 1:
 				opJogar();
@@ -52,7 +47,7 @@ public class Main {
 				System.out.println("Opção Invalida! Digite Novamente");
 				break;
 			}
-		} while (!tacerto);
+		} while (true);
 		
 		
 	}
