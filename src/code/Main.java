@@ -16,7 +16,7 @@ public class Main {
 		boolean confirmaCaneta = false;
 		String papelCaneta;
 
-		boolean confirmaAluno;
+		boolean confirmaAluno = false;
 		String aluno;
 
 		alimentaVetores();
@@ -51,10 +51,10 @@ public class Main {
 
 		} while (confirmaCaneta == false);
 
-		System.out.println("Então bora lá " + nomeJogador + "...\n"
-				+ "Antes de começar o projeto para decifrar o enigma, precisamos voltar no tempo e relembrar alguns conceitos que serão essenciais para decifrarmos os códigos...\n"
+		System.out.println("\nEntão bora lá " + nomeJogador + "...\n"
+				+ "\nAntes de começar o projeto para decifrar o enigma, precisamos voltar no tempo e relembrar alguns conceitos que serão essenciais para decifrarmos os códigos...\n"
 				+ "Você precisa nos provar que realmente está capacitado para esse projeto, com isso vamos começar relembrando algumas coisas do ensino médio.\n"
-				+ "Pergunta: Em que classe de grupo você ficava?");
+				+ "\nPergunta: Em que classe de grupo você ficava?");
 		System.out.println("1: Os estudiosos\n" + "2: Turma do fundão\n" + "3: Matadores de Aula\n"
 				+ "4: Os copiadores\n");
 		do {
@@ -64,25 +64,30 @@ public class Main {
 			 
 			switch (aluno) {
 			case "1":
-
+				System.out.println("\nParabéns, então você consegue nos ajudar nesse projeto!");
+				confirmaAluno = true;
 				break;
 
 			case "2":
-
+				System.out.println("\nVocê terá um pouco mais de dificuldade, mas lhe daremos uma chance!");
+				confirmaAluno = true;
 				break;
 
 			case "3":
-
+				System.out.println("\nPuxa, infelizmente você está dispensado do projeto");
+				confirmaAluno = true;
 				break;
 
 			case "4":
-
+				System.out.println("\nvocê terá algumas dificuldades ao longo do jogo, mas lhe daremos uma chance");
+				confirmaAluno = true;
 				break;
 
 			default:
+				System.out.println("Resposta Incorreta!");
 				break;
 			}
-		} while (true);
+		} while (confirmaAluno == false);
 
 		menu();
 
@@ -100,6 +105,18 @@ public class Main {
 		historia[8] = "";
 		historia[9] = "";
 
+		enunciado[0] = "";
+		enunciado[1] = "";
+		enunciado[2] = "";
+		enunciado[3] = "";
+		enunciado[4] = "";
+		enunciado[5] = "";
+		enunciado[6] = "";
+		enunciado[7] = "";
+		enunciado[8] = "";
+		enunciado[9] = "";
+		
+		
 	}
 
 	static void menu() {
