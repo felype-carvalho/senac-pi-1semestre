@@ -104,8 +104,8 @@ public class Main {
 	static void alimentaVetores() {
 		
 		// Vetor com os textos da História
-		historia[0] = "*Mensagem da história 01*";
-		historia[1] = "*Mensagem da história 02*";
+		historia[0] = "Antes de começar o projeto para decifrar o enigma, precisamos voltar no tempo e relembrar alguns conceitos que serão essenciais para decifrarmos os códigos...";
+		historia[1] = "Você precisa nos provar que realmente está capacitado para esse projeto, com isso vamos começar relembrando algumas coisas do ensino médio";
 		historia[2] = "*Mensagem da história 03*";
 		historia[3] = "*Mensagem da história 04*";
 		historia[4] = "*Mensagem da história 05*";
@@ -116,8 +116,8 @@ public class Main {
 		historia[9] = "*Mensagem da história 10*";
 
 		// Vetor com os enunciados das questões
-		enunciado[0] = "*Enunciado Pergunta 01*";
-		enunciado[1] = "*Enunciado Pergunta 02*";
+		enunciado[0] = "1)Qual é o dobro de dois elevado a décima oitava potência?\"";
+		enunciado[1] = "*1 - Qual é o dobro de dois elevado a décima oitava potência?";
 		enunciado[2] = "*Enunciado Pergunta 03*";
 		enunciado[3] = "*Enunciado Pergunta 04*";
 		enunciado[4] = "*Enunciado Pergunta 05*";
@@ -130,7 +130,7 @@ public class Main {
 		//Vetor com as alternativas das questões
 		
 		
-		alternativaA[0] = "a) Respota certa";
+		alternativaA[0] = "a) Dois elevado a décima nona potência ";
 		alternativaA[1] = "a) Respota certa";
 		alternativaA[2] = "a) Respota certa";
 		alternativaA[3] = "a) Respota certa";
@@ -141,7 +141,7 @@ public class Main {
 		alternativaA[8] = "a) Respota certa";
 		alternativaA[9] = "a) Respota certa";
 		
-		alternativaB[0] = "Alternativa B pergunta 01";
+		alternativaB[0] = "b)Dois elevado a trigésima sexta potência";
 		alternativaB[1] = "Alternativa B pergunta 02";
 		alternativaB[2] = "Alternativa B pergunta 03";
 		alternativaB[3] = "Alternativa B pergunta 04";
@@ -152,7 +152,7 @@ public class Main {
 		alternativaB[8] = "Alternativa B pergunta 09";
 		alternativaB[9] = "Alternativa B pergunta 10";
 		
-		alternativaC[0] = "Alternativa C pergunta 01";
+		alternativaC[0] = "c)Um elevado a décima sexta potência";
 		alternativaC[1] = "Alternativa C pergunta 02";
 		alternativaC[2] = "Alternativa C pergunta 03";
 		alternativaC[3] = "Alternativa C pergunta 04";
@@ -163,7 +163,7 @@ public class Main {
 		alternativaC[8] = "Alternativa C pergunta 09";
 		alternativaC[9] = "Alternativa C pergunta 10";
 		
-		alternativaD[0] = "Alternativa D pergunta 01";
+		alternativaD[0] = "d)Um elevado a trigésima nona potência";
 		alternativaD[1] = "Alternativa D pergunta 02";
 		alternativaD[2] = "Alternativa D pergunta 03";
 		alternativaD[3] = "Alternativa D pergunta 04";
