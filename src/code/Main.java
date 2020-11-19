@@ -83,8 +83,8 @@ public class Main {
 
 			case "3":
 				System.out.println("\nPuxa, infelizmente você está dispensado do projeto");
-				confirmaAluno = true;
-				break;
+				opSair();
+				
 
 			case "4":
 				System.out.println("\nvocê terá algumas dificuldades ao longo do jogo, mas lhe daremos uma chance");
@@ -250,12 +250,12 @@ public class Main {
 		for (int i = 0; i <= 9; i++) {
 			//System.out.println(i);
 			
-			System.out.println(historia[i]);
-			System.out.println(enunciado[i]);
+			System.out.println("\n" + historia[i]);
+			System.out.println("\n" + enunciado[i]);
 			System.out.println(alternativaA[i]);
 			System.out.println(alternativaB[i]);
 			System.out.println(alternativaC[i]);
-			System.out.println(alternativaD[i]);
+			System.out.println(alternativaD[i] + "\n");
 			
 //			if(numPergunta == 10) {
 //				perguntaSecreta();
@@ -360,6 +360,8 @@ public class Main {
 			
 		}
 		
+		System.out.println("Você acertou " + contPontos + " pontos");
+		opSair();
 	}
 
 	static void opIntrucoes() {
@@ -373,7 +375,8 @@ public class Main {
 	}
 
 	static void opSair() {
-		System.out.println("|---Opção Sair---|");
+		System.out.println("\nFim de Jogo.");
+		System.out.println("\nAté a proxíma!");
 		System.exit(0);
 	}
 
