@@ -106,9 +106,16 @@ public class Main {
 		// Vetor com os textos da História
 		historia[0] = "Antes de começar o projeto para decifrar o enigma, precisamos voltar no tempo e relembrar alguns conceitos que serão essenciais para decifrarmos os códigos...";
 		historia[1] = "Você precisa nos provar que realmente está capacitado para esse projeto, com isso vamos começar relembrando algumas coisas do ensino médio";
-		historia[2] = "*Mensagem da história 03*";
-		historia[3] = "*Mensagem da história 04*";
-		historia[4] = "*Mensagem da história 05*";
+		historia[2] = "Agora que você faz parte do projeto ultra secreto, vamos por a mão na massa!\r\n" + 
+				"Muitas vidas já foram perdidas com essa guerra, estamos correndo contra o tempo para salvar o maior número de pessoas e vencer a guerra.\r\n" + 
+				"Temos que começar resolvendo essa primeira questão, vamos lá...\r\n" + 
+				"";
+		historia[3] = "*Agora faremos uma viagem para nossa base militar, os desafios se tornarão maiores e precisamos que você esteja concentrado para vencer...\r\n" + 
+				"A enigma funciona com diversos códigos que mudam a cada ataque do inimigo, conseguimos resgatar um, mas não temos a resposta, vejamos se você pode nos ajudar...\r\n" + 
+				"";
+		historia[4] = "Agora que estamos pertos do primeiro sucesso, surgiu um problema mais difícil, envolve  expressões equivalentes, seja o gênio que precisamos...\r\n" + 
+				"Respira e vamos ao primeiro sucesso...\r\n" + 
+				"";
 		historia[5] = "*Mensagem da história 06*";
 		historia[6] = "*Mensagem da história 07*";
 		historia[7] = "*Mensagem da história 08*";
@@ -117,9 +124,9 @@ public class Main {
 
 		// Vetor com os enunciados das questões
 		enunciado[0] = "1)Qual é o dobro de dois elevado a décima oitava potência?\"";
-		enunciado[1] = "*1 - Qual é o dobro de dois elevado a décima oitava potência?";
-		enunciado[2] = "*Enunciado Pergunta 03*";
-		enunciado[3] = "*Enunciado Pergunta 04*";
+		enunciado[1] = "2)No sistema de numeração de base binária, como escrevemos o número 10?";
+		enunciado[2] = "3)Quais expressões são equivalentes a raiz[5](b^9)? ";
+		enunciado[3] = "4) - Quais expressões são equivalentes a (d^1/8)^5?";
 		enunciado[4] = "*Enunciado Pergunta 05*";
 		enunciado[5] = "*Enunciado Pergunta 06*";
 		enunciado[6] = "*Enunciado Pergunta 07*";
@@ -131,9 +138,9 @@ public class Main {
 		
 		
 		alternativaA[0] = "a) Dois elevado a décima nona potência ";
-		alternativaA[1] = "a) Respota certa";
-		alternativaA[2] = "a) Respota certa";
-		alternativaA[3] = "a) Respota certa";
+		alternativaA[1] = "a) 1010";
+		alternativaA[2] = "a) (b^5)^1/9";
+		alternativaA[3] = "a) (d^5)^8";
 		alternativaA[4] = "a) Respota certa";
 		alternativaA[5] = "a) Respota certa";
 		alternativaA[6] = "a) Respota certa";
@@ -142,9 +149,9 @@ public class Main {
 		alternativaA[9] = "a) Respota certa";
 		
 		alternativaB[0] = "b)Dois elevado a trigésima sexta potência";
-		alternativaB[1] = "Alternativa B pergunta 02";
-		alternativaB[2] = "Alternativa B pergunta 03";
-		alternativaB[3] = "Alternativa B pergunta 04";
+		alternativaB[1] = "b)11";
+		alternativaB[2] = "b) b^5/9";
+		alternativaB[3] = "b) (raiz[8](d))^5";
 		alternativaB[4] = "Alternativa B pergunta 05";
 		alternativaB[5] = "Alternativa B pergunta 06";
 		alternativaB[6] = "Alternativa B pergunta 07";
@@ -153,9 +160,9 @@ public class Main {
 		alternativaB[9] = "Alternativa B pergunta 10";
 		
 		alternativaC[0] = "c)Um elevado a décima sexta potência";
-		alternativaC[1] = "Alternativa C pergunta 02";
-		alternativaC[2] = "Alternativa C pergunta 03";
-		alternativaC[3] = "Alternativa C pergunta 04";
+		alternativaC[1] = "c)1001";
+		alternativaC[2] = "c) b^9/5 ";
+		alternativaC[3] = "c) (d^5)^1/8";
 		alternativaC[4] = "Alternativa C pergunta 05";
 		alternativaC[5] = "Alternativa C pergunta 06";
 		alternativaC[6] = "Alternativa C pergunta 07";
@@ -164,9 +171,9 @@ public class Main {
 		alternativaC[9] = "Alternativa C pergunta 10";
 		
 		alternativaD[0] = "d)Um elevado a trigésima nona potência";
-		alternativaD[1] = "Alternativa D pergunta 02";
-		alternativaD[2] = "Alternativa D pergunta 03";
-		alternativaD[3] = "Alternativa D pergunta 04";
+		alternativaD[1] = "d)22";
+		alternativaD[2] = "d) Nenhuma das anteriores";
+		alternativaD[3] = "d) Nenhuma das anteriores";
 		alternativaD[4] = "Alternativa D pergunta 05";
 		alternativaD[5] = "Alternativa D pergunta 06";
 		alternativaD[6] = "Alternativa D pergunta 07";
