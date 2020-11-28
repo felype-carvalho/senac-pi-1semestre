@@ -221,16 +221,16 @@ public class Main {
 		respostaNegativa[9] = "";
 
 		// Vetor com as respostas certas
-		respostaCerta[0] = "a) Respota certa";
-		respostaCerta[1] = "a) Respota certa";
-		respostaCerta[2] = "a) Respota certa";
-		respostaCerta[3] = "a) Respota certa";
-		respostaCerta[4] = "a) Respota certa";
-		respostaCerta[5] = "a) Respota certa";
-		respostaCerta[6] = "a) Respota certa";
-		respostaCerta[7] = "a) Respota certa";
-		respostaCerta[8] = "a) Respota certa";
-		respostaCerta[9] = "a) Respota certa";
+		respostaCerta[0] = "";
+		respostaCerta[1] = "";
+		respostaCerta[2] = "";
+		respostaCerta[3] = "";
+		respostaCerta[4] = "";
+		respostaCerta[5] = "";
+		respostaCerta[6] = "";
+		respostaCerta[7] = "";
+		respostaCerta[8] = "";
+		respostaCerta[9] = "";
 
 	}
 
