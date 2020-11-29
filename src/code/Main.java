@@ -303,20 +303,11 @@ public class Main {
 
 				System.out.println("Digite a opção escolhida abaixo: ");
 				resposta = entrada.next();
+				
+				resposta.toUpperCase();
 
 				switch (resposta) {
 
-				// Variações de "A"
-
-				case "a":
-					System.out.println("\n");
-					if (alternativaA[i] == respostaCerta[i]) {
-						System.out.println("Acertou!!!!");
-						contPontos++;
-					}
-
-					confimaResposta = true;
-					break;
 				case "A":
 					System.out.println("\n");
 					if (alternativaA[i] == respostaCerta[i]) {
@@ -326,16 +317,6 @@ public class Main {
 					confimaResposta = true;
 					break;
 
-				// Variações de "B"
-
-				case "b":
-					System.out.println("\n");
-					if (alternativaB[i] == respostaCerta[i]) {
-						System.out.println("Acertou!!!!");
-						contPontos++;
-					}
-					confimaResposta = true;
-					break;
 				case "B":
 					System.out.println("\n");
 					if (alternativaB[i] == respostaCerta[i]) {
@@ -345,32 +326,12 @@ public class Main {
 					confimaResposta = true;
 					break;
 
-				// Variações de "C"
 
-				case "c":
-					System.out.println("\n");
-					confimaResposta = true;
-					if (alternativaC[i] == respostaCerta[i]) {
-						System.out.println("Acertou!!!!");
-						contPontos++;
-					}
-					break;
 
 				case "C":
 					System.out.println("\n");
 					confimaResposta = true;
 					if (alternativaC[i] == respostaCerta[i]) {
-						System.out.println("Acertou!!!!");
-						contPontos++;
-					}
-					break;
-
-				// Variações de "D"
-
-				case "d":
-					System.out.println("\n");
-					confimaResposta = true;
-					if (alternativaD[i] == respostaCerta[i]) {
 						System.out.println("Acertou!!!!");
 						contPontos++;
 					}
