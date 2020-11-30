@@ -371,9 +371,34 @@ public class Main {
 	}
 
 	static void opSair() {
-		System.out.println("\nFim de Jogo.");
-		System.out.println("\nAté a proxíma!");
-		System.exit(0);
+		boolean confirmaResp = false;
+		String resp;
+		
+		System.out.println("\n |---Fim de Jogo---|");
+		
+		do {
+			System.out.println("Deseja ir para o menu principal? ");
+			System.out.println("Digite Abaixo:");
+			
+			resp = entrada.next();
+			resp.toUpperCase();
+			
+			switch (resp) {
+			case "SIM":
+				menu();
+				
+				break;
+			case "NÃO":
+				System.out.println("\nAté a proxíma!");
+				System.exit(0);
+				
+				break;
+			default:
+				System.out.println("Respota ");
+				break;
+			}
+		} while(confirmaResp == false);
+		
 	}
 
 }
