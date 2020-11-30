@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Main {
 
-	static int contPontos = 0;
+	
 	static String nomeJogador;
 	static Scanner entrada = new Scanner(System.in);
 
@@ -281,7 +281,9 @@ public class Main {
 
 	public static void opJogar() {
 		System.out.println("|---Opção Jogar---|");
-
+		
+		int contPontos = 0;
+		
 		String resposta;
 		boolean confimaResposta = false;
 
@@ -357,7 +359,7 @@ public class Main {
 		}
 
 		System.out.println("Você acertou " + contPontos + " pontos");
-		opSair();
+		finalJogo(contPontos);
 	}
 
 	static void opIntrucoes() {
@@ -401,4 +403,20 @@ public class Main {
 		
 	}
 
+	static void finalJogo(int contPontos) {
+		
+		if (contPontos <= 3) {
+			System.out.println("Final Ruim");
+			opSair();
+		} else if (contPontos <= 5) {
+			System.out.println("Final mais ou menos ruim");
+			opSair();
+		}  else if (contPontos <= 7) {
+			System.out.println("Final mais ou menos bom");
+			opSair();
+		} else {
+			System.out.println("Final bom");
+			opSair();
+		}
+	}
 }
