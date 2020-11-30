@@ -5,7 +5,6 @@ import java.util.Random;
 
 public class Main {
 
-	
 	static String nomeJogador;
 	static Scanner entrada = new Scanner(System.in);
 
@@ -186,7 +185,7 @@ public class Main {
 			embaralha[1] = alternativaB[i];
 			embaralha[2] = alternativaC[i];
 			embaralha[3] = alternativaD[i];
-			
+
 			embaralhaVetores(embaralha);
 
 			alternativaA[i] = embaralha[0];
@@ -235,9 +234,9 @@ public class Main {
 	}
 
 	static void embaralhaVetores(String embaralha[]) {
-		
+
 		Random random = new Random();
-		
+
 		for (int i = 0; i < embaralha.length; i++) {
 			// sorteia um índice
 			int j = random.nextInt(embaralha.length);
@@ -281,9 +280,9 @@ public class Main {
 
 	public static void opJogar() {
 		System.out.println("|---Opção Jogar---|");
-		
+
 		int contPontos = 0;
-		
+
 		String resposta;
 		boolean confimaResposta = false;
 
@@ -305,7 +304,7 @@ public class Main {
 
 				System.out.println("Digite a opção escolhida abaixo: ");
 				resposta = entrada.next();
-				
+
 				resposta.toUpperCase();
 
 				switch (resposta) {
@@ -314,28 +313,32 @@ public class Main {
 					System.out.println("\n");
 					if (alternativaA[i] == respostaCerta[i]) {
 						System.out.println("Acertou!!!!");
+						System.out.println(respostaPositiva[i]);
 						contPontos++;
+					} else {
+						confimaResposta = true;
 					}
-					confimaResposta = true;
 					break;
 
 				case "B":
 					System.out.println("\n");
 					if (alternativaB[i] == respostaCerta[i]) {
 						System.out.println("Acertou!!!!");
+						System.out.println(respostaPositiva[i]);
 						contPontos++;
+					} else {
+						confimaResposta = true;
 					}
-					confimaResposta = true;
-					break;
-
-
 
 				case "C":
 					System.out.println("\n");
 					confimaResposta = true;
 					if (alternativaC[i] == respostaCerta[i]) {
 						System.out.println("Acertou!!!!");
+						System.out.println(respostaPositiva[i]);
 						contPontos++;
+					} else {
+						confimaResposta = true;
 					}
 					break;
 
@@ -344,12 +347,14 @@ public class Main {
 					confimaResposta = true;
 					if (alternativaD[i] == respostaCerta[i]) {
 						System.out.println("Acertou!!!!");
+						System.out.println(respostaPositiva[i]);
 						contPontos++;
+					} else {
+						confimaResposta = true;
 					}
 					break;
 
 				// Default
-
 				default:
 					System.out.println("Resposta Incorreta!");
 					break;
@@ -375,43 +380,43 @@ public class Main {
 	static void opSair() {
 		boolean confirmaResp = false;
 		String resp;
-		
+
 		System.out.println("\n |---Fim de Jogo---|");
-		
+
 		do {
 			System.out.println("Deseja ir para o menu principal? ");
 			System.out.println("Digite Abaixo:");
-			
+
 			resp = entrada.next();
 			resp.toUpperCase();
-			
+
 			switch (resp) {
 			case "SIM":
 				menu();
-				
+
 				break;
 			case "NÃO":
 				System.out.println("\nAté a proxíma!");
 				System.exit(0);
-				
+
 				break;
 			default:
 				System.out.println("Respota ");
 				break;
 			}
-		} while(confirmaResp == false);
-		
+		} while (confirmaResp == false);
+
 	}
 
 	static void finalJogo(int contPontos) {
-		
+
 		if (contPontos <= 3) {
 			System.out.println("Final Ruim");
 			opSair();
 		} else if (contPontos <= 5) {
 			System.out.println("Final mais ou menos ruim");
 			opSair();
-		}  else if (contPontos <= 7) {
+		} else if (contPontos <= 7) {
 			System.out.println("Final mais ou menos bom");
 			opSair();
 		} else {
