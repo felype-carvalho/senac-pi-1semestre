@@ -1,13 +1,17 @@
 package code;
 
-import java.util.Scanner;
 import java.util.Random;
-
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+import java.awt.Desktop;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collections;
 public class Main {
 
+	static long milisPorChar = 60;
 	static String nomeJogador;
 	static Scanner entrada = new Scanner(System.in);
-
 	static String historia[] = new String[10];
 	static String enunciado[] = new String[10];
 	static String alternativaA[] = new String[10];
@@ -19,7 +23,7 @@ public class Main {
 	static String respostaNegativa[] = new String[10];
 	static String respostaCerta[] = new String[10];
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		boolean confirmaCaneta = false;
 		String papelCaneta;
@@ -29,17 +33,17 @@ public class Main {
 
 		alimentaVetores();
 
-		System.out.println("PI – O jogo da imitação\n");
-		System.out.println(
+		digita("PI – O jogo da imitação\n", milisPorChar);
+		digita(
 				"Espero que esteja ansioso para um projeto ultrassecreto, com o objetivo de tentar quebrar o indecifrável \n"
-						+ "código nazista, feito pela maquina enigma, vencer a guerra e trazer paz novamente! \n");
-		System.out.println("Matemático(a), para começarmos, por favor, diga-me o seu nome:");
+						+ "código nazista, feito pela maquina enigma, vencer a guerra e trazer paz novamente! \n", milisPorChar);
+		digita("Matemático(a), para começarmos, por favor, diga-me o seu nome:", milisPorChar);
 		nomeJogador = entrada.next();
-
-		System.out.println("Seja bem-vindo. \n");
+		digita("Seja bem-vindo. \n", milisPorChar);
+		
 
 		do {
-			System.out.println(nomeJogador + ", está com papel e caneta na mãos? Digite abaixo:");
+			digita(nomeJogador + ", está com papel e caneta na mãos? Digite abaixo:", milisPorChar);
 			papelCaneta = entrada.next();
 
 			switch (papelCaneta) {
@@ -59,34 +63,34 @@ public class Main {
 
 		} while (confirmaCaneta == false);
 
-		System.out.println("\nEntão bora lá " + nomeJogador + "...\n"
+		digita("\nEntão bora lá " + nomeJogador + "...\n"
 				+ "\nAntes de começar o projeto para decifrar o enigma, precisamos voltar no tempo e relembrar alguns conceitos que serão essenciais para decifrarmos os códigos...\n"
 				+ "Você precisa nos provar que realmente está capacitado para esse projeto, com isso vamos começar relembrando algumas coisas do ensino médio.\n"
-				+ "\nPergunta: Em que classe de grupo você ficava?");
-		System.out.println(
-				"1: Os estudiosos\n" + "2: Turma do fundão\n" + "3: Matadores de Aula\n" + "4: Os copiadores\n");
+				+ "\nPergunta: Em que classe de grupo você ficava?", milisPorChar);
+		digita(
+				"1: Os estudiosos\n" + "2: Turma do fundão\n" + "3: Matadores de Aula\n" + "4: Os copiadores\n", milisPorChar);
 		do {
 
-			System.out.println("Digite a opção escolhida abaixo: ");
+			digita("Digite a opção escolhida abaixo: ", milisPorChar);
 			aluno = entrada.next();
 
 			switch (aluno) {
 			case "1":
-				System.out.println("\nParabéns, então você consegue nos ajudar nesse projeto!");
+				digita("\nParabéns, então você consegue nos ajudar nesse projeto!", milisPorChar);
 				confirmaAluno = true;
 				break;
 
 			case "2":
-				System.out.println("\nVocê terá um pouco mais de dificuldade, mas lhe daremos uma chance!");
+				digita("\nVocê terá um pouco mais de dificuldade, mas lhe daremos uma chance!", milisPorChar);
 				confirmaAluno = true;
 				break;
 
 			case "3":
-				System.out.println("\nPuxa, infelizmente você está dispensado do projeto");
+				digita("\nPuxa, infelizmente você está dispensado do projeto", milisPorChar);
 				opSair();
 
 			case "4":
-				System.out.println("\nvocê terá algumas dificuldades ao longo do jogo, mas lhe daremos uma chance");
+				digita("você terá algumas dificuldades ao longo do jogo, mas lhe daremos uma chance", milisPorChar);
 				confirmaAluno = true;
 				break;
 
@@ -233,6 +237,13 @@ public class Main {
 
 	}
 
+	public static void digita(String mensagem, long milisPorChar) throws InterruptedException {
+		for (int i = 0; i < mensagem.length(); i++) {
+			System.out.print(mensagem.charAt(i));
+
+			Thread.sleep(milisPorChar);
+		}
+	}
 	static void embaralhaVetores(String embaralha[]) {
 
 		Random random = new Random();
