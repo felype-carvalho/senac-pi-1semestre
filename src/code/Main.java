@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 public class Main {
 
-	static long milisPorChar = 60;
+	static long milisPorChar = 1;
 	static String nomeJogador;
 	static Scanner entrada = new Scanner(System.in);
 	static String historia[] = new String[10];
@@ -33,29 +33,29 @@ public class Main {
 
 		alimentaVetores();
 
-		digita("PI – O jogo da imitação\n", milisPorChar);
+		digita("PI – O jogo da imitação \n\n", milisPorChar);
+//		System.out.println("\n");
+//		
 		digita(
 				"Espero que esteja ansioso para um projeto ultrassecreto, com o objetivo de tentar quebrar o indecifrável \n"
 						+ "código nazista, feito pela maquina enigma, vencer a guerra e trazer paz novamente! \n", milisPorChar);
-		digita("Matemático(a), para começarmos, por favor, diga-me o seu nome:", milisPorChar);
+		digita("\nMatemático(a), para começarmos, por favor, diga-me o seu nome: \n", milisPorChar);
 		nomeJogador = entrada.next();
-		digita("Seja bem-vindo. \n", milisPorChar);
+		digita("\nSeja bem-vindo. \n", milisPorChar);
 		
 
 		do {
-			digita(nomeJogador + ", está com papel e caneta na mãos? Digite abaixo:", milisPorChar);
+			digita(nomeJogador + ", está com papel e caneta na mãos? Digite abaixo: \n", milisPorChar);
 			papelCaneta = entrada.next();
+			
+			papelCaneta = papelCaneta.toUpperCase();
 
 			switch (papelCaneta) {
-			case "sim":
-				confirmaCaneta = true;
-				break;
+			
 			case "SIM":
 				confirmaCaneta = true;
 				break;
-			case "Sim":
-				confirmaCaneta = true;
-				break;
+		
 			default:
 				System.out.println("\nAinda não está com o papel e caneta em mãos? A gente espera sem problema.");
 				break;
@@ -66,7 +66,7 @@ public class Main {
 		digita("\nEntão bora lá " + nomeJogador + "...\n"
 				+ "\nAntes de começar o projeto para decifrar o enigma, precisamos voltar no tempo e relembrar alguns conceitos que serão essenciais para decifrarmos os códigos...\n"
 				+ "Você precisa nos provar que realmente está capacitado para esse projeto, com isso vamos começar relembrando algumas coisas do ensino médio.\n"
-				+ "\nPergunta: Em que classe de grupo você ficava?", milisPorChar);
+				+ "\nPergunta: Em que classe de grupo você ficava?\n", milisPorChar);
 		digita(
 				"1: Os estudiosos\n" + "2: Turma do fundão\n" + "3: Matadores de Aula\n" + "4: Os copiadores\n", milisPorChar);
 		do {
@@ -259,7 +259,7 @@ public class Main {
 		}
 	}
 
-	static void menu() {
+	static void menu() throws InterruptedException {
 
 		do {
 			System.out.println(
@@ -289,23 +289,53 @@ public class Main {
 
 	}
 
-	public static void opJogar() {
+	public static void opJogar() throws InterruptedException {
 		System.out.println("|---Opção Jogar---|");
-
+		
+		String aux;
 		int contPontos = 0;
 
 		String resposta;
 		boolean confimaResposta = false;
 
 		for (int i = 0; i <= 9; i++) {
-			// System.out.println(i);
+			String altA = "a) ", altB = "b) ", altC = "c) ", altD = "d) ";
 
-			System.out.println("\n" + historia[i]);
-			System.out.println("\n" + enunciado[i]);
-			System.out.println("a) " + alternativaA[i]);
-			System.out.println("b) " + alternativaB[i]);
-			System.out.println("c) " + alternativaC[i]);
-			System.out.println("d) " + alternativaD[i] + "\n");
+			System.out.println("\n");
+			aux = historia[i];
+			digita(aux, milisPorChar);
+			
+			System.out.println("\n");
+			aux = enunciado[i];
+			digita(aux, milisPorChar);
+			
+			System.out.println("\n");
+			aux = alternativaA[i];
+			aux = altA.concat(aux);
+			digita(aux, milisPorChar);
+			
+			System.out.println("");
+			aux = alternativaB[i];
+			aux = altB.concat(aux);
+			digita(aux, milisPorChar);
+			
+			System.out.println("");
+			aux = alternativaC[i];
+			aux = altC.concat(aux);
+			digita(aux, milisPorChar);
+			
+			System.out.println("");
+			aux = alternativaD[i];
+			aux = altD.concat(aux);
+			digita(aux, milisPorChar);
+			System.out.println("\n");
+			
+//			System.out.println("\n" + historia[i]);
+//			System.out.println("\n" + enunciado[i]);
+//			System.out.println("a) " + alternativaA[i]);
+//			System.out.println("b) " + alternativaB[i]);
+//			System.out.println("c) " + alternativaC[i]);
+//			System.out.println("d) " + alternativaD[i] + "\n");
 
 //			if(numPergunta == 10) {
 //				perguntaSecreta();
@@ -316,14 +346,12 @@ public class Main {
 				System.out.println("Digite a opção escolhida abaixo: ");
 				resposta = entrada.next();
 
-				resposta.toUpperCase();
-
+				resposta = resposta.toUpperCase();
 				switch (resposta) {
 
 				case "A":
 					System.out.println("\n");
 					if (alternativaA[i] == respostaCerta[i]) {
-						System.out.println("Acertou!!!!");
 						System.out.println(respostaPositiva[i]);
 						contPontos++;
 					} else {
@@ -334,7 +362,6 @@ public class Main {
 				case "B":
 					System.out.println("\n");
 					if (alternativaB[i] == respostaCerta[i]) {
-						System.out.println("Acertou!!!!");
 						System.out.println(respostaPositiva[i]);
 						contPontos++;
 					} else {
@@ -345,7 +372,6 @@ public class Main {
 					System.out.println("\n");
 					confimaResposta = true;
 					if (alternativaC[i] == respostaCerta[i]) {
-						System.out.println("Acertou!!!!");
 						System.out.println(respostaPositiva[i]);
 						contPontos++;
 					} else {
@@ -357,7 +383,6 @@ public class Main {
 					System.out.println("\n");
 					confimaResposta = true;
 					if (alternativaD[i] == respostaCerta[i]) {
-						System.out.println("Acertou!!!!");
 						System.out.println(respostaPositiva[i]);
 						contPontos++;
 					} else {
@@ -367,7 +392,7 @@ public class Main {
 
 				// Default
 				default:
-					System.out.println("Resposta Incorreta!");
+					digita("Respotas Invalida!", milisPorChar);
 					break;
 				}
 			} while (confimaResposta == false);
@@ -388,7 +413,7 @@ public class Main {
 
 	}
 
-	static void opSair() {
+	static void opSair() throws InterruptedException {
 		boolean confirmaResp = false;
 		String resp;
 
@@ -419,7 +444,7 @@ public class Main {
 
 	}
 
-	static void finalJogo(int contPontos) {
+	static void finalJogo(int contPontos) throws InterruptedException {
 
 		if (contPontos <= 3) {
 			System.out.println("Final Ruim");
