@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 public class Main {
 
-	static long milisPorChar = 60;
+	static long milisPorChar = 1;
 	static String nomeJogador;
 	static Scanner entrada = new Scanner(System.in);
 	static String historia[] = new String[10];
@@ -28,29 +28,29 @@ public class Main {
 
 		alimentaVetores();
 
-		digita("PI – O jogo da imitação\n", milisPorChar);
+		digita("PI – O jogo da imitação \n\n", milisPorChar);
+//		System.out.println("\n");
+//		
 		digita(
 				"Espero que esteja ansioso para um projeto ultrassecreto, com o objetivo de tentar quebrar o indecifrável \n"
 						+ "código nazista, feito pela maquina enigma, vencer a guerra e trazer paz novamente! \n", milisPorChar);
-		digita("Matemático(a), para começarmos, por favor, diga-me o seu nome:", milisPorChar);
+		digita("\nMatemático(a), para começarmos, por favor, diga-me o seu nome: \n", milisPorChar);
 		nomeJogador = entrada.next();
-		digita("Seja bem-vindo. \n", milisPorChar);
+		digita("\nSeja bem-vindo. \n", milisPorChar);
 		
 
 		do {
-			digita(nomeJogador + ", está com papel e caneta na mãos? Digite abaixo:", milisPorChar);
+			digita(nomeJogador + ", está com papel e caneta na mãos? Digite abaixo: \n", milisPorChar);
 			papelCaneta = entrada.next();
+			
+			papelCaneta = papelCaneta.toUpperCase();
 
 			switch (papelCaneta) {
-			case "sim":
-				confirmaCaneta = true;
-				break;
+			
 			case "SIM":
 				confirmaCaneta = true;
 				break;
-			case "Sim":
-				confirmaCaneta = true;
-				break;
+		
 			default:
 				System.out.println("\nAinda não está com o papel e caneta em mãos? A gente espera sem problema.");
 				break;
@@ -61,7 +61,7 @@ public class Main {
 		digita("\nEntão bora lá " + nomeJogador + "...\n"
 				+ "\nAntes de começar o projeto para decifrar o enigma, precisamos voltar no tempo e relembrar alguns conceitos que serão essenciais para decifrarmos os códigos...\n"
 				+ "Você precisa nos provar que realmente está capacitado para esse projeto, com isso vamos começar relembrando algumas coisas do ensino médio.\n"
-				+ "\nPergunta: Em que classe de grupo você ficava?", milisPorChar);
+				+ "\nPergunta: Em que classe de grupo você ficava?\n", milisPorChar);
 		digita(
 				"1: Os estudiosos\n" + "2: Turma do fundão\n" + "3: Matadores de Aula\n" + "4: Os copiadores\n", milisPorChar);
 		do {
@@ -110,13 +110,24 @@ public class Main {
 		historia[3] = "*Agora faremos uma viagem para nossa base militar, os desafios se tornarão maiores e precisamos que você esteja concentrado para vencer...\r\n"
 				+ "A enigma funciona com diversos códigos que mudam a cada ataque do inimigo, conseguimos resgatar um, mas não temos a resposta, vejamos se você pode nos ajudar...\r\n"
 				+ "";
-		historia[4] = "Agora que estamos pertos do primeiro sucesso, surgiu um problema mais difícil, envolve  expressões equivalentes, seja o gênio que precisamos...\r\n"
+		historia[4] = "Agora antes de entrar na guerra, para provar que voce é qualificado para nos ajudar a\r\n" + 
+				"decodificar o codigo, devemos testar suas habiliadades para provar o seu conhecimento\r\n" + 
+				"tecnico e suas capacidades dedutivas.\r\n" + 
+				". Agora que estamos pertos do primeiro sucesso, surgiu um problema mais difícil, envolve  expressões equivalentes, seja o gênio que precisamos...\r\n"
 				+ "Respira e vamos ao primeiro sucesso...\r\n" + "";
-		historia[5] = "*Mensagem da história 06*";
-		historia[6] = "*Mensagem da história 07*";
-		historia[7] = "*Mensagem da história 08*";
-		historia[8] = "*Mensagem da história 09*";
-		historia[9] = "*Mensagem da história 10*";
+		historia[5] = "Estamos chegando no momento perto de interceptar o primeiro ataque nazista, a partir daqui, cada ação que você tomar pode salvar ou matar mais vidas...*";
+		historia[6] = "Agora que conseguimos interceptar o primeiro ataque, estamos no meio do jogo, continue assim e logo venceremos essa guerra, me ajude com um código, é o seguinte...";
+		historia[7] = "Os nazistas estão tentando entrar em contado com o grande navio de guerra Bismark que está\r\n" + 
+				"a procura de uma saida para o oceano, como ajudante do deparatmento de comunicações do\r\n" + 
+				"Exercito britanico, sua missão sera triangular a posição da torre de cominicações\r\n" + 
+				"alemã no pacifico:";
+		historia[8] = "Perfeito, agora que a base esta pronta, devemos nos concentrar em criar os vetores\r\n" + 
+				"necessarios para a configuração do codigo que desvendara a criptografia da Enigma, que\r\n" + 
+				"foram encontrados parcialmente por Alan Turing, basta terminar o que ele já começou:";
+		historia[9] = "Agora só falta o ultimo ingrediente que são as variaveis da maquina que conseguimos na\r\n" + 
+				"vitoria contra o navio Bismark, faça a engenharia reversa da maquina e insira as variaveis no\r\n" + 
+				"computador:\r\n" + 
+				"A vitória será nossa, milhões de vidas serão salvas e ficaremos marcados na história!!!";
 
 		// Vetor com os enunciados das questões
 		enunciado[0] = "1) Qual é o dobro de dois elevado a décima oitava potência?\"";
@@ -196,27 +207,28 @@ public class Main {
 
 		// Vetores com as respostas postivas e negativa dependendo da resposta do
 		// usuário á questão
-		respostaPositiva[0] = "";
-		respostaPositiva[1] = "";
-		respostaPositiva[2] = "";
-		respostaPositiva[3] = "";
-		respostaPositiva[4] = "";
-		respostaPositiva[5] = "";
-		respostaPositiva[6] = "";
-		respostaPositiva[7] = "";
-		respostaPositiva[8] = "";
-		respostaPositiva[9] = "";
+		respostaPositiva[0] = "PARABÉNS, AGORA ACREDITAMOS EM VOCE PARA DECIFRAR O EGNIMA";
+		respostaPositiva[1] = "Boa! Matemático, você é a nossa esperança, parabéns pelo raciocínio...";
+		respostaPositiva[2] = "Isso ai gênio! Estamos perto de interceptar o primeiro ataque dos malditos nazistas!";
+		respostaPositiva[3] = "Parabéns! Conseguimos interceptar o primeiro ataque, com isso salvamos milhares de vida, estamos no caminho certo...";
+		respostaPositiva[4] = "Isso ai gênio! Conseguimos impedir o primeiro ataque, estamos caminhando ao sucesso!";
+		respostaPositiva[5] = ": Aha! Uma base na Groelândia, essa descoberta nos trará a vantagem";
+		respostaPositiva[6] = "Parece que tentaram fazer os reparos em altom mar em vez de um porto,\r\n" + 
+				"será nossa chance";
+		respostaPositiva[7] = "Continue assim e logo estaremos voltando em paz para casa!";
+		respostaPositiva[8] = "Quanta emoção! Finalmente estamos perto do fim, falta só mais uma";
+		respostaPositiva[9] = "Vitória Vitória Vitória, a enigma foi decifrada e os nazistas derrotados!!! PARABÉNS!!!";
 
-		respostaNegativa[0] = "";
-		respostaNegativa[1] = "";
-		respostaNegativa[2] = "";
-		respostaNegativa[3] = "";
-		respostaNegativa[4] = "";
-		respostaNegativa[5] = "";
-		respostaNegativa[6] = "";
-		respostaNegativa[7] = "";
-		respostaNegativa[8] = "";
-		respostaNegativa[9] = "";
+		respostaNegativa[0] = "Puxa! Errou na primeira, não nos decpicone!";
+		respostaNegativa[1] = "Não! Não nos faça se arrepender por ter escolhido você, lá vai uma dica para que você não erre.";
+		respostaNegativa[2] = "Não! Estamos tão perto do fracasso, não podemos errar de novo, milhares de vidas dependem disso!";
+		respostaNegativa[3] = "Não! Vidas foram perdidas com esse erro, não podemos dar esse gostinho aos nazistas novamente...";
+		respostaNegativa[4] = "Não! Milhares de vidas dependem disso! Tome mais cuidado!";
+		respostaNegativa[5] = " Parece que o codigo vai precisar de aprimoramento!";
+		respostaNegativa[6] = "Estou começando achar que você é um espião";
+		respostaNegativa[7] = "Não!!! não erre novamente";
+		respostaNegativa[8] = "Meu Deus, estavamos tão perto da vitória";
+		respostaNegativa[9] = "Não Acredito, só faltava isso para vencermos essa guerra!";
 
 		// Vetor com as respostas certas
 		respostaCerta[0] = "";
@@ -254,7 +266,7 @@ public class Main {
 		}
 	}
 
-	static void menu() {
+	static void menu() throws InterruptedException {
 
 		do {
 			System.out.println(
@@ -284,25 +296,64 @@ public class Main {
 
 	}
 
-	public static void opJogar() {
+	public static void opJogar() throws InterruptedException {
 		System.out.println("|---Opção Jogar---|");
-
+		
 		int contPontos = 0;
-		String aux; 
+		String aux1; 
 
-		String resposta;
+		String resposta = null;
 		boolean confimaResposta = false;
 
 		for (int i = 0; i <= 9; i++) {
+
 			// System.out.println(i);
-			aux = historia[i];
-			digita();
+			aux1 = historia[i];
+			digita(resposta, milisPorChar);
 			//System.out.println("\n" + historia[i]);
 			//System.out.println("\n" + enunciado[i]);
 			//System.out.println("a) " + alternativaA[i]);
 			//System.out.println("b) " + alternativaB[i]);
 			//System.out.println("c) " + alternativaC[i]);
 			//System.out.println("d) " + alternativaD[i] + "\n");
+
+			String altA = "a) ", altB = "b) ", altC = "c) ", altD = "d) ";
+
+			System.out.println("\n");
+			aux1 = historia[i];
+			digita(aux1, milisPorChar);
+			
+			System.out.println("\n");
+			aux1 = enunciado[i];
+			digita(aux1, milisPorChar);
+			
+			System.out.println("\n");
+			aux1 = alternativaA[i];
+			aux1 = altA.concat(aux1);
+			digita(aux1, milisPorChar);
+			
+			System.out.println("");
+			aux1 = alternativaB[i];
+			aux1 = altB.concat(aux1);
+			digita(aux1, milisPorChar);
+			
+			System.out.println("");
+			aux1 = alternativaC[i];
+			aux1 = altC.concat(aux1);
+			digita(aux1, milisPorChar);
+			
+			System.out.println("");
+			aux1 = alternativaD[i];
+			aux1 = altD.concat(aux1);
+			digita(aux1, milisPorChar);
+			System.out.println("\n");
+			
+//			System.out.println("\n" + historia[i]);
+//			System.out.println("\n" + enunciado[i]);
+//			System.out.println("a) " + alternativaA[i]);
+//			System.out.println("b) " + alternativaB[i]);
+//			System.out.println("c) " + alternativaC[i]);
+//			System.out.println("d) " + alternativaD[i] + "\n");
 
 //			if(numPergunta == 10) {
 //				perguntaSecreta();
@@ -313,14 +364,12 @@ public class Main {
 				System.out.println("Digite a opção escolhida abaixo: ");
 				resposta = entrada.next();
 
-				resposta.toUpperCase();
-
+				resposta = resposta.toUpperCase();
 				switch (resposta) {
 
 				case "A":
 					System.out.println("\n");
 					if (alternativaA[i] == respostaCerta[i]) {
-						System.out.println("Acertou!!!!");
 						System.out.println(respostaPositiva[i]);
 						contPontos++;
 					} else {
@@ -331,7 +380,6 @@ public class Main {
 				case "B":
 					System.out.println("\n");
 					if (alternativaB[i] == respostaCerta[i]) {
-						System.out.println("Acertou!!!!");
 						System.out.println(respostaPositiva[i]);
 						contPontos++;
 					} else {
@@ -342,7 +390,6 @@ public class Main {
 					System.out.println("\n");
 					confimaResposta = true;
 					if (alternativaC[i] == respostaCerta[i]) {
-						System.out.println("Acertou!!!!");
 						System.out.println(respostaPositiva[i]);
 						contPontos++;
 					} else {
@@ -354,7 +401,6 @@ public class Main {
 					System.out.println("\n");
 					confimaResposta = true;
 					if (alternativaD[i] == respostaCerta[i]) {
-						System.out.println("Acertou!!!!");
 						System.out.println(respostaPositiva[i]);
 						contPontos++;
 					} else {
@@ -364,7 +410,7 @@ public class Main {
 
 				// Default
 				default:
-					System.out.println("Resposta Incorreta!");
+					digita("Respotas Invalida!", milisPorChar);
 					break;
 				}
 			} while (confimaResposta == false);
@@ -385,7 +431,7 @@ public class Main {
 
 	}
 
-	static void opSair() {
+	static void opSair() throws InterruptedException {
 		boolean confirmaResp = false;
 		String resp;
 
@@ -416,7 +462,7 @@ public class Main {
 
 	}
 
-	static void finalJogo(int contPontos) {
+	static void finalJogo(int contPontos) throws InterruptedException {
 
 		if (contPontos <= 3) {
 			System.out.println("Final Ruim");

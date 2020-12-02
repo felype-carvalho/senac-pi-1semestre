@@ -25,7 +25,7 @@ public class teste {
 		
 //		Main.menu();
 //		Main.alimentaVetores();
-		Main.opJogar;
+//		Main.opJogar;
 //		Main.opCreditos();
 //		Main.opSair();
 //		Main.opIntrucoes();
