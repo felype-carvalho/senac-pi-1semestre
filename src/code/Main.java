@@ -2,11 +2,6 @@ package code;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
-import java.awt.Desktop;
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Collections;
 public class Main {
 
 	static long milisPorChar = 60;
@@ -293,19 +288,21 @@ public class Main {
 		System.out.println("|---Opção Jogar---|");
 
 		int contPontos = 0;
+		String aux; 
 
 		String resposta;
 		boolean confimaResposta = false;
 
 		for (int i = 0; i <= 9; i++) {
 			// System.out.println(i);
-
-			System.out.println("\n" + historia[i]);
-			System.out.println("\n" + enunciado[i]);
-			System.out.println("a) " + alternativaA[i]);
-			System.out.println("b) " + alternativaB[i]);
-			System.out.println("c) " + alternativaC[i]);
-			System.out.println("d) " + alternativaD[i] + "\n");
+			aux = historia[i];
+			digita();
+			//System.out.println("\n" + historia[i]);
+			//System.out.println("\n" + enunciado[i]);
+			//System.out.println("a) " + alternativaA[i]);
+			//System.out.println("b) " + alternativaB[i]);
+			//System.out.println("c) " + alternativaC[i]);
+			//System.out.println("d) " + alternativaD[i] + "\n");
 
 //			if(numPergunta == 10) {
 //				perguntaSecreta();
