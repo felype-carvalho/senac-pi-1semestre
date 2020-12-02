@@ -231,16 +231,16 @@ public class Main {
 		respostaNegativa[9] = "Não Acredito, só faltava isso para vencermos essa guerra!";
 
 		// Vetor com as respostas certas
-		respostaCerta[0] = "";
-		respostaCerta[1] = "";
-		respostaCerta[2] = "";
-		respostaCerta[3] = "";
-		respostaCerta[4] = "";
-		respostaCerta[5] = "";
-		respostaCerta[6] = "";
-		respostaCerta[7] = "";
-		respostaCerta[8] = "";
-		respostaCerta[9] = "";
+		respostaCerta[0] = "Dois elevado a décima nona potência";
+		respostaCerta[1] = "1010";
+		respostaCerta[2] = "b^9/5";
+		respostaCerta[3] = "(d^5)^1/8";
+		respostaCerta[4] = "-5^3 - 28y^2-33y+18";
+		respostaCerta[5] = "a^2a^7";
+		respostaCerta[6] = "x^4-2x^2-24";
+		respostaCerta[7] = "5";
+		respostaCerta[8] = "-10";
+		respostaCerta[9] = "-5 ; 5";
 
 	}
 
@@ -474,7 +474,7 @@ public class Main {
 			System.out.println("Final mais ou menos bom");
 			opSair();
 		} else {
-			System.out.println("Final bom");
+			System.out.println("Final bom!");
 			opSair();
 		}
 	}
