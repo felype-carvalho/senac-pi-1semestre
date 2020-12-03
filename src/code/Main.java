@@ -224,7 +224,7 @@ public class Main {
 		respostaNegativa[2] = "Não! Estamos tão perto do fracasso, não podemos errar de novo, milhares de vidas dependem disso!";
 		respostaNegativa[3] = "Não! Vidas foram perdidas com esse erro, não podemos dar esse gostinho aos nazistas novamente...";
 		respostaNegativa[4] = "Não! Milhares de vidas dependem disso! Tome mais cuidado!";
-		respostaNegativa[5] = " Parece que o codigo vai precisar de aprimoramento!";
+		respostaNegativa[5] = "Parece que o codigo vai precisar de aprimoramento!";
 		respostaNegativa[6] = "Estou começando achar que você é um espião";
 		respostaNegativa[7] = "Não!!! não erre novamente";
 		respostaNegativa[8] = "Meu Deus, estavamos tão perto da vitória";
@@ -248,7 +248,7 @@ public class Main {
 		for (int i = 0; i < mensagem.length(); i++) {
 			System.out.print(mensagem.charAt(i));
 
-			Thread.sleep(milisPorChar);
+		
 		}
 	}
 	static void embaralhaVetores(String embaralha[]) {
@@ -302,14 +302,14 @@ public class Main {
 		int contPontos = 0;
 		String aux1; 
 
-		String resposta = null;
+		String resposta;
 		boolean confimaResposta = false;
 
 		for (int i = 0; i <= 9; i++) {
 
 			// System.out.println(i);
-			aux1 = historia[i];
-			digita(resposta, milisPorChar);
+			
+			//digita(resposta, milisPorChar);
 			//System.out.println("\n" + historia[i]);
 			//System.out.println("\n" + enunciado[i]);
 			//System.out.println("a) " + alternativaA[i]);
@@ -374,6 +374,7 @@ public class Main {
 						contPontos++;
 					} else {
 						confimaResposta = true;
+						System.out.println("Você errou!");
 					}
 					break;
 
@@ -384,6 +385,7 @@ public class Main {
 						contPontos++;
 					} else {
 						confimaResposta = true;
+						System.out.println("Você errou!");
 					}
 
 				case "C":
@@ -394,6 +396,7 @@ public class Main {
 						contPontos++;
 					} else {
 						confimaResposta = true;
+						System.out.println("Você errou!");
 					}
 					break;
 
@@ -405,6 +408,7 @@ public class Main {
 						contPontos++;
 					} else {
 						confimaResposta = true;
+						System.out.println("Você errou!");
 					}
 					break;
 
@@ -436,7 +440,7 @@ public class Main {
 		String resp;
 
 		System.out.println("\n |---Fim de Jogo---|");
-
+//
 		do {
 			System.out.println("Deseja ir para o menu principal? ");
 			System.out.println("Digite Abaixo:");
