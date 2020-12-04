@@ -135,22 +135,22 @@ public class Main {
 				+ "A vitória será nossa, milhões de vidas serão salvas e ficaremos marcados na história!!!";
 
 		// Vetor com os enunciados das questões
-		enunciado[0] = "1) Qual é o dobro de dois elevado a décima oitava potência?\"";
-		enunciado[1] = "2) No sistema de numeração de base binária, como escrevemos o número 10?";
-		enunciado[2] = "3) Quais expressões são equivalentes a raiz[5](b^9)? ";
-		enunciado[3] = "4) Quais expressões são equivalentes a (d^1/8)^5?";
-		enunciado[4] = "5) Sua resposta deve ser um polinômio na forma padrão. ";
-		enunciado[5] = "6) Qual expressão exponencial é equivalente a (^7a)^2 ?";
-		enunciado[6] = "7) Sua resposta deve ser um polinômio na forma padrão(x^2+4)(x^2−6)";
-		enunciado[7] = "8) Descubra o numero escondido por trás do código abaixo: 3x – 15 = 5x + 25";
-		enunciado[8] = "9) Descubra o numero escondido por trás do código abaixo: 2.(3x-10) = 8x.(10-4)²";
-		enunciado[9] = "10) Decodifique as raízes do criptografo dos nazista: x² - 10x – 25 = 0";
+		enunciado[0] = "1) qual é o doBro de dois elevado a décima oitava potência?\"";
+		enunciado[1] = "2) no sistema De numeração de base binária, como escrevemos o número 10?";
+		enunciado[2] = "3) quais expressões são equivalentes a raiz[5](C^9)? ";
+		enunciado[3] = "4) quAis expressões são equivalentes a (d^1/8)^5?";
+		enunciado[4] = "5) sua rEsposta deve ser um polinômio na forma padrão. ";
+		enunciado[5] = "6) qual expressão exponenCial é equivalente a (^7a)^2 ?";
+		enunciado[6] = "7) suA resposta deve ser um polinômio na forma padrão(x^2+4)(x^2−6)";
+		enunciado[7] = "8) descubra o numero escondido por trás do código abaixo: 3x – 15 = 5x + 25";
+		enunciado[8] = "9) descubra o numero escondido por trás do código abaixo: 2.(3x-10) = 8x.(10-4)²";
+		enunciado[9] = "10) d+ecodifique as raízes do criptografo dos nazista: x² - 10x – 25 = 0";
 
 		// Vetor com as alternativas das questões
 
 		alternativaA[0] = "Dois elevado a décima nona potência";
 		alternativaA[1] = "1010";
-		alternativaA[2] = "(b^5)^1/9";
+		alternativaA[2] = "(C^5)^1/9";
 		alternativaA[3] = "(d^5)^8";
 		alternativaA[4] = "-5^3 - 28y^2-33y+18";
 		alternativaA[5] = "a^7a^2";
@@ -161,7 +161,7 @@ public class Main {
 
 		alternativaB[0] = "Dois elevado a trigésima sexta potência";
 		alternativaB[1] = "11";
-		alternativaB[2] = "b^5/9";
+		alternativaB[2] = "C^5/9";
 		alternativaB[3] = "(raiz[8](d))^5";
 		alternativaB[4] = "-5^3 - 28y^2-33y+17";
 		alternativaB[5] = "a^2a^7";
@@ -172,7 +172,7 @@ public class Main {
 
 		alternativaC[0] = "Um elevado a décima sexta potência";
 		alternativaC[1] = "1001";
-		alternativaC[2] = "b^9/5 ";
+		alternativaC[2] = "C^9/5 ";
 		alternativaC[3] = "(d^5)^1/8";
 		alternativaC[4] = "-5^3 - 28y^2-33y+16";
 		alternativaC[5] = "2|7";
@@ -217,7 +217,7 @@ public class Main {
 		respostaPositiva[2] = "Isso ai gênio! Estamos perto de interceptar o primeiro ataque dos malditos nazistas!";
 		respostaPositiva[3] = "Parabéns! Conseguimos interceptar o primeiro ataque, com isso salvamos milhares de vida, estamos no caminho certo...";
 		respostaPositiva[4] = "Isso ai gênio! Conseguimos impedir o primeiro ataque, estamos caminhando ao sucesso!";
-		respostaPositiva[5] = ": Aha! Uma base na Groelândia, essa descoberta nos trará a vantagem";
+		respostaPositiva[5] = "Aha! Uma base na Groelândia, essa descoberta nos trará a vantagem";
 		respostaPositiva[6] = "Parece que tentaram fazer os reparos em altom mar em vez de um porto,\r\n"
 				+ "será nossa chance";
 		respostaPositiva[7] = "Continue assim e logo estaremos voltando em paz para casa!";
@@ -229,7 +229,7 @@ public class Main {
 		respostaNegativa[2] = "Não! Estamos tão perto do fracasso, não podemos errar de novo, milhares de vidas dependem disso!";
 		respostaNegativa[3] = "Não! Vidas foram perdidas com esse erro, não podemos dar esse gostinho aos nazistas novamente...";
 		respostaNegativa[4] = "Não! Milhares de vidas dependem disso! Tome mais cuidado!";
-		respostaNegativa[5] = " Parece que o codigo vai precisar de aprimoramento!";
+		respostaNegativa[5] = "Parece que o codigo vai precisar de aprimoramento!";
 		respostaNegativa[6] = "Estou começando achar que você é um espião";
 		respostaNegativa[7] = "Não!!! não erre novamente";
 		respostaNegativa[8] = "Meu Deus, estavamos tão perto da vitória";
@@ -250,21 +250,21 @@ public class Main {
 		// Vetor com os enunciados dos enigmas
 		enigmas[3] = "Agora que terminou de responder as perguntas, digite abaixo qual é o codigo escondido:";
 		enigmas[6] = "Oh, não! Parece que eles estão usando o seu codigo secreto que passou despercebido pelas nossas proprias frequencias de radio.\nRapido desvende e digite o codigo hexadecimal abaixo antes que seja tarde:";
-		enigmas[9] = "Pronto! O codigo esta em nossas maos, a vitoria sera logo nossa! Falta apenas o toque final, termine de decifar o Enigma:";
+		enigmas[9] = "Pronto! O codigo esta em nossas maos, a vitoria sera logo nossa! Falta apenas o toque final, termine de decifar o Enigma: 6 4 1 2\n (posição do alfabeto > hexadecimal)";
 
 		// Vetor com os comnetários quando o jogador acertar o enigma
 		enigmaCorreto[3] = "Parabens! Voce descobriu o codigo!";
-		enigmaCorreto[6] = "Parabens! Voce descobriu o codigo!";
-		enigmaCorreto[9] = "Parabens! Voce descobriu o codigo!";
+		enigmaCorreto[6] = "Parabens! Voce encontrou o codigo escondido na frequência!";
+		enigmaCorreto[9] = "Parabens! Voce decifrou o Enigma!";
 
 		// Vetor com os comnetários quando o jogador errar o enigma
 		enigmaErrado[3] = "Esse não é o codigo correto.";
-		enigmaErrado[6] = "Esse não é o codigo correto.";
-		enigmaErrado[9] = "Esse não é o codigo correto.";
+		enigmaErrado[6] = "O codigo escapou de nossas mãos.";
+		enigmaErrado[9] = "A maquina nazista.";
 
 		// Vetor com as respostas dos enigmas
-		enigmaResposta[3] = "2143";
-		enigmaResposta[6] = "101412";
+		enigmaResposta[3] = "4231";
+		enigmaResposta[6] = "141210";
 		enigmaResposta[9] = "15131011";
 
 	}
@@ -512,19 +512,19 @@ public class Main {
 	static void finalJogo(int contPontos, int contEnigmas) throws InterruptedException {
 
 		if (contEnigmas == 3) {
-			// fazer final secreto
+			System.out.println("Parabéns!!! O proprio Alan Turing te considera o maior matemático de todos os tempos!!!\n Sua fama e glória ficarão eternizados na hitoria do globo!");
 		} else {
 			if (contPontos <= 3) {
-				System.out.println("Final Ruim");
+				System.out.println("No final de tudo, os Nazistas foram mais engenhosos e ganharam a guerra mesmo assim. Você perdeu!");
 				opSair();
 			} else if (contPontos <= 5) {
-				System.out.println("Final mais ou menos ruim");
+				System.out.println("A guerra foi dura e difícil e muitas vidas foram perdidas...\nMas no final os justos sempre ganham!\nVocê conseguiu levar os Aliados á vitória!");
 				opSair();
 			} else if (contPontos <= 7) {
-				System.out.println("Final mais ou menos bom");
+				System.out.println("Congratulações! Sua bravura levou ao encurtamento da guerra e a vitória dos aliados!");
 				opSair();
 			} else {
-				System.out.println("Final bom");
+				System.out.println("É com muito prazer que lhe dou a medalha de honra por seus bravos feitos no compo de batalha e nas salas de pequisa!\nSua bravura, dedicação e astucia levou a uma vitória rapida e limpa dos Aliados contra os Nazistas\nMeus sinceros parabens!!!");
 				opSair();
 			}
 		}
